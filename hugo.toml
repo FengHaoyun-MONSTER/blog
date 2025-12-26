@@ -27,3 +27,14 @@ enableRobotsTXT = true
   name = "标签"
   url = "/tags/"
   weight = 2
+
+[params.giscus]
+repo = "FengHaoyun-MONSTER/FengHaoyun-MONSTER.github.io"
+repoId = "R_kgDOQvAC9g"
+category = "General"
+categoryId = "DIC_kwDOQvAC9s4C0P_6"
+mapping = "pathname"
+reactionsEnabled = "1"
+emitMetadata = "0"
+theme = "preferred_color_scheme"
+lang = "zh-CN"
