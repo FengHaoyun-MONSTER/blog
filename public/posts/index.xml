@@ -2,18 +2,140 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on FengHaoyun 的技术博客</title>
-    <link>https://FengHaoyun-MONSTER.github.io/posts/</link>
+    <link>http://localhost:6528/posts/</link>
     <description>Recent content in Posts on FengHaoyun 的技术博客</description>
     <generator>Hugo -- 0.153.2</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://FengHaoyun-MONSTER.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Dec 2025 15:19:41 +0800</lastBuildDate>
+    <atom:link href="http://localhost:6528/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo的语法实列</title>
+      <link>http://localhost:6528/posts/hugo%E4%B8%ADmd%E7%9A%84%E8%AF%AD%E6%B3%95%E5%AE%9E%E5%88%97/</link>
+      <pubDate>Fri, 26 Dec 2025 15:19:41 +0800</pubDate>
+      <guid>http://localhost:6528/posts/hugo%E4%B8%ADmd%E7%9A%84%E8%AF%AD%E6%B3%95%E5%AE%9E%E5%88%97/</guid>
+      <description>&lt;h2 id=&#34;hugo--papermod-markdown-写作完整示例&#34;&gt;Hugo + PaperMod Markdown 写作完整示例&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文档是一份 &lt;strong&gt;可直接照抄使用的 Markdown 编写规范&lt;/strong&gt;，适用于：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;Hugo（Goldmark 渲染器）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;PaperMod 主题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;技术博客 / 笔记 / 教程写作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一文章头部front-matter必须&#34;&gt;一、文章头部（Front Matter）【必须】&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Antigravity 不能选择模型的解决方案&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;2025-12-26T10:30:00&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;+08&lt;/span&gt;:&lt;span style=&#34;color:#ae81ff&#34;&gt;00&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;draft&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;slug&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;antigravity-model-select-fix&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;tags&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;amp;nbsp;&lt;/span&gt; - &lt;span style=&#34;color:#ae81ff&#34;&gt;Hugo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;amp;nbsp;&lt;/span&gt; - &lt;span style=&#34;color:#ae81ff&#34;&gt;博客&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;amp;nbsp;&lt;/span&gt; - &lt;span style=&#34;color:#ae81ff&#34;&gt;排错&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;categories&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;amp;nbsp;&lt;/span&gt; - &lt;span style=&#34;color:#ae81ff&#34;&gt;技术&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;说明&#34;&gt;说明&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;title&lt;/code&gt;：文章标题（可中文）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;draft&lt;/code&gt;：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;  * &lt;code&gt;true&lt;/code&gt;：草稿（本地可见，线上不发布）&lt;/p&gt;
+&lt;p&gt;  * &lt;code&gt;false&lt;/code&gt;：正式发布&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;slug&lt;/code&gt;：URL 路径（&lt;strong&gt;强烈建议使用英文&lt;/strong&gt;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;tags / categories&lt;/code&gt;：PaperMod 支持&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二标题规范&#34;&gt;二、标题规范&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;#符号前面不能有任何东西,否则hugo不能正常渲染
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# 一级标题（通常不用）
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## 二级标题（正文主标题）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### 三级标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#### 四级标题
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;注意事项&#34;&gt;注意事项&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;##   测试&lt;/code&gt; 和 &lt;code&gt;## 测试&lt;/code&gt; &lt;strong&gt;效果相同&lt;/strong&gt;（多余空格会被忽略）&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Antigravity不能选择模型的解决方案</title>
+      <link>http://localhost:6528/posts/antigravity%E4%B8%8D%E8%83%BD%E9%80%89%E6%8B%A9%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Fri, 26 Dec 2025 14:41:53 +0800</pubDate>
+      <guid>http://localhost:6528/posts/antigravity%E4%B8%8D%E8%83%BD%E9%80%89%E6%8B%A9%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>&lt;p&gt;# 问题一:&lt;/p&gt;
+&lt;p&gt;antigravity一直显示loading models&lt;/p&gt;
+&lt;p&gt;就是出不来&lt;/p&gt;
+&lt;p&gt;windows11 同样的自建节点&lt;/p&gt;
+&lt;p&gt;退出重新登录解决了&lt;/p&gt;
+&lt;p&gt;*排查思路*&lt;/p&gt;
+&lt;p&gt;1.先检查是否走到代理,应该是tasks.googleapis.com和apidata.googleusercontent.com&lt;/p&gt;
+&lt;p&gt; 		```&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; 		没走到&lt;/p&gt;
+&lt;p&gt; 			打开TUN&lt;/p&gt;
+&lt;p&gt; 		走到了&lt;/p&gt;
+&lt;p&gt; 			换梯子试试&lt;/p&gt;
+&lt;p&gt; 				没其他节点或者梯子,可以加我V,ChasingDream_2021,用我的试试,校验是否是梯子问题&lt;/p&gt;
+&lt;p&gt; 		```&lt;/p&gt;
+&lt;p&gt;昨晚一个兄弟遇到了一个问题解决了&lt;/p&gt;
+&lt;p&gt;但更新shenhe不tongguo&lt;/p&gt;
+&lt;p&gt;我写在这里吧&lt;/p&gt;
+&lt;p&gt;[连接](&lt;a href=&#34;https://dev.to/joeytrabbiani/antigravitybu-neng-xuan-ze-mo-xing-de-jie-jue-fang-an-36pf&#34;&gt;https://dev.to/joeytrabbiani/antigravitybu-neng-xuan-ze-mo-xing-de-jie-jue-fang-an-36pf&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;# 问题二&lt;/p&gt;
+&lt;p&gt;浏览器登陆成功&lt;/p&gt;
+&lt;p&gt;但回调antigravity的时候回调不成功&lt;/p&gt;
+&lt;p&gt;会导致浏览器一直能登录成功&lt;/p&gt;
+&lt;p&gt;antigravity会停留在去登录的界面&lt;/p&gt;
+&lt;p&gt;第一次安装antigravity的时候,千万别选择从其他IDE导入数据&lt;/p&gt;
+&lt;p&gt;问题解决&lt;/p&gt;
+&lt;p&gt;兄弟们有遇到什么问题怎么解决的,可以放评论区,我收集一下下&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Hello World</title>
-      <link>https://FengHaoyun-MONSTER.github.io/posts/hello-world/</link>
+      <link>http://localhost:6528/posts/hello-world/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://FengHaoyun-MONSTER.github.io/posts/hello-world/</guid>
-      <description>&lt;p&gt;这是我使用 **Hugo + GitHub Pages** 搭建的第一个博客。&lt;/p&gt;
+      <guid>http://localhost:6528/posts/hello-world/</guid>
+      <description>&lt;p&gt;测试自动部署
+这是我使用 **Hugo + GitHub Pages** 搭建的第一个博客。&lt;/p&gt;
 &lt;p&gt;之后我会在这里记录：&lt;/p&gt;
 &lt;p&gt;- 技术实践&lt;/p&gt;
 &lt;p&gt;- 架构设计&lt;/p&gt;
