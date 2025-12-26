@@ -1,0 +1,29 @@
+baseURL = "https://FengHaoyun-MONSTER.github.io/"
+languageCode = "zh-cn"
+title = "FengHaoyun 的技术博客"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+
+[params]
+  env = "production"
+  description = "记录技术、架构与工程实践"
+  author = "FengHaoyun"
+
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+  defaultTheme = "auto"
+
+[[menu.main]]
+  name = "归档"
+  url = "/archives/"
+  weight = 1
+
+[[menu.main]]
+  name = "标签"
+  url = "/tags/"
+  weight = 2
