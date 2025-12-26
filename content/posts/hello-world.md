@@ -10,6 +10,7 @@ draft: false
 
 
 
+测试自动部署
 这是我使用 \*\*Hugo + GitHub Pages\*\* 搭建的第一个博客。
 
 
