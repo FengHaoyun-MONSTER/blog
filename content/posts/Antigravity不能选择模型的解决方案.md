@@ -1,6 +1,6 @@
 +++
 date = '2025-12-26T14:41:53+08:00'
-draft = true
+draft = false
 title = 'Antigravity不能选择模型的解决方案'
 +++
 
@@ -26,7 +26,7 @@ windows11 同样的自建节点
 
 *排查思路*
 
-1.先检查是否走到代理,应该是tasks.googleapis.com和apidata.googleusercontent.com
+1\.先检查是否走到代理,应该是tasks.googleapis.com和apidata.googleusercontent.com
 
  		```
 
@@ -42,7 +42,7 @@ windows11 同样的自建节点
 
  			换梯子试试
 
- 				没其他节点或者梯子,可以加我V,ChasingDream_2021,用我的试试,校验是否是梯子问题
+ 				没其他节点或者梯子,可以加我V,ChasingDream\_2021,用我的试试,校验是否是梯子问题
 
  		```
 
@@ -83,6 +83,4 @@ antigravity会停留在去登录的界面
 
 
 兄弟们有遇到什么问题怎么解决的,可以放评论区,我收集一下下
-
-
 
